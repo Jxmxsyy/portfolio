@@ -9,11 +9,12 @@ body{
 }
 /* this breaks position sticky in Firefox */
 /* overflow-x: hidden; */
-}
 
 header {
     grid-column: 1 / 3;
-    background: #455A64;
+    background: #938a2ffc;
+    /*background: #f9bf3f;*/
+    /*background: #455A64;*/
     color: white;
     padding: 4rem;
     text-align: center;
@@ -22,6 +23,7 @@ header {
 nav {
     white-space: nowrap;
     background: #37474F;
+    width: 150px;
 }
 
     nav ul {
@@ -47,18 +49,29 @@ nav ul li a {
     nav ul li a.current {
         background: black;
     }
+    nav ul li a.current:hover{
+        color: white;
+    }
+    nav ul li a:hover{
+        color:black;
+    }
 
 main {
     padding-bottom: 40rem;
 }
 
 section {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+    padding-bottom: 1rem;
+    padding-top:2rem;
     margin: 0 0 2rem 0;
 }
 
 footer {
     grid-column: 1 / 3;
-    background: #607D8B;
+    background: #938a2ffc;
+    text-align:center;
+    /*background: #607D8B;*/
     padding: 5rem 1rem;
 }
